@@ -37,7 +37,7 @@ export const Navbar: React.FC = () => {
             <circle cx="50" cy="50" r="27" fill="none" stroke="rgba(217,164,65,.55)" stroke-width="1" />
             <g className="ring-text">
               <text fontFamily="'IBM Plex Mono',monospace" fontSize="8.6" letterSpacing="2.1" fill="#F1EBD9">
-                <textPath href="#ringPath">THE DHAMNI BOAT CLUB · EST. 2007 ·</textPath>
+                <textPath href="#ringPath">LALALAND LAKEHOUSE · EST. 2007 ·</textPath>
               </text>
             </g>
             <g stroke="#D9A441" strokeWidth="2.6" strokeLinecap="round" fill="none">
@@ -49,7 +49,7 @@ export const Navbar: React.FC = () => {
           </svg>
           <span className="logo-words">
             <span className="name">Lala<b>land</b>lakehouse</span>
-            <span className="club">Home of the Dhamni Boat Club</span>
+            <span className="club">The Modern Life Antidote</span>
           </span>
         </a>
         
@@ -71,7 +71,6 @@ export const Navbar: React.FC = () => {
           <a href="#food" onClick={closeMobileMenu}>Food</a>
           <a href="#land" onClick={closeMobileMenu}>The land</a>
           <a href="#arrive" onClick={closeMobileMenu}>Arrival</a>
-          <a className="cta" href="#invite" onClick={closeMobileMenu}>By introduction</a>
         </nav>
       </div>
     </div>

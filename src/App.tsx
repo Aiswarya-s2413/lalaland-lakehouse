@@ -14,8 +14,6 @@ import { FoodSection } from './components/FoodSection';
 import { WhatYouLeaveWithSection } from './components/WhatYouLeaveWithSection';
 import { TimelineSection } from './components/TimelineSection';
 import { ArrivalSection } from './components/ArrivalSection';
-import { InvitationSection } from './components/InvitationSection';
-import { Footer } from './components/Footer';
 
 // Ambient looping drone footage behind the hero text
 const VideoBackground: React.FC = () => {
@@ -137,7 +135,7 @@ function App() {
             Do it at Lalaland Lakehouse. The Modern Life Antidote.
           </p>
           <div className="hero-cta rv in d3">
-            <a className="btn btn-sun" href="#invite">
+            <a className="btn btn-sun" href="#stays">
               Plan Your Stay
             </a>
             <a className="btn btn-ghost" href="#why">
@@ -178,12 +176,6 @@ function App() {
 
       {/* Section 5: Getting Here (Distances & FAQ accordion) */}
       <ArrivalSection />
-
-      {/* Referral introduction invite section with fireflies */}
-      <InvitationSection />
-
-      {/* Simple Footer */}
-      <Footer />
     </>
   );
 }

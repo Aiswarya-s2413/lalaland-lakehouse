@@ -24,7 +24,7 @@ export const WhoRediscoversSection: React.FC = () => {
       ico: '🌅',
       title: 'Slow-Living Seekers',
       focus: 'Discover: the pleasure of doing less',
-      desc: 'The jhoola. The hammock. A book and nowhere to be. A home-cooked lunch from the farm. This is what you\'ve been quietly craving for months.',
+      desc: 'The jhoola. The hammock. A book and nowhere to be. A home-cooked lunch from the farm. This is what you\'ve been quietly craving for months',
     },
     {
       ico: '✍️',
@@ -43,17 +43,17 @@ export const WhoRediscoversSection: React.FC = () => {
   return (
     <section id="who" style={{ paddingTop: '40px' }}>
       <div className="wrap">
-        <span className="eyebrow rv">Who comes here</span>
-        <h2 className="rv d1" style={{ marginTop: '16px' }}>
-          All kinds — drawn by the <em>same quiet feeling.</em>
+        <h2 className="rv d1" style={{ marginTop: '16px', fontFamily: 'var(--display)', fontWeight: 300, fontSize: 'clamp(32px, 5vw, 58px)', color: 'var(--day)' }}>
+          Section 3: Who Rediscovers here
         </h2>
         <p className="lede rv d2">
-          What guests share is a sense that life has been moving too fast, and a readiness
-          — even if they can't name it yet — to let it slow down for a few days. Some
-          arrive knowing exactly why. Others figure it out somewhere between the lake walk
-          and the bonfire.
+          All kinds of people. What they share is the quiet sense that something has gone missing and
+          a readiness, even if they can't name it yet, to find it again.
         </p>
-        <div className="who-grid">
+        <p className="lede rv d2" style={{ marginTop: '10px' }}>
+          Some know exactly what they've lost. Others figure it out somewhere between the lake walk and the bonfire.
+        </p>
+        <div className="who-grid" style={{ marginTop: '40px' }}>
           {cards.map((card, i) => (
             <div key={i} className={`who-card rv d${(i % 3) + 1}`}>
               <span className="ico">{card.ico}</span>

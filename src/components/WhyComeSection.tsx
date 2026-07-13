@@ -23,9 +23,8 @@ export const WhyComeSection: React.FC = () => {
   return (
     <section id="why" style={{ paddingTop: '30px', paddingBottom: '40px' }}>
       <div className="narrow">
-        <span className="eyebrow rv">Why you need to come</span>
-        <h2 className="rv d1" style={{ marginTop: '16px' }}>
-          Not a hotel with a pool. <em>A real break.</em>
+        <h2 className="rv d1" style={{ marginTop: '16px', fontFamily: 'var(--display)', fontWeight: 300, fontSize: 'clamp(32px, 5vw, 58px)', color: 'var(--day)' }}>
+          Section 2: What Modern Life Takes
         </h2>
         <div className="prose rv d2" style={{ marginTop: '26px', maxWidth: 'none' }}>
           <p>
@@ -38,8 +37,7 @@ export const WhyComeSection: React.FC = () => {
             Your curiosity. The ease you used to feel with the people you love most. The ideas that stopped coming.
           </p>
           <p>
-            Lalaland Lakehouse exists as an antidote to all of that. 
-            <strong> You don't need to fix anything. You just need to arrive.</strong>
+            Lalaland Lakehouse exists as an antidote to all of that.
           </p>
         </div>
       </div>
@@ -52,6 +50,12 @@ export const WhyComeSection: React.FC = () => {
               <p>{card.content}</p>
             </div>
           ))}
+        </div>
+        
+        <div className="narrow rv d3" style={{ marginTop: '36px', textAlign: 'center' }}>
+          <p className="mono" style={{ fontSize: '15px', color: 'var(--sun)', letterSpacing: '0.05em' }}>
+            You don't need to fix anything. You just need to arrive.
+          </p>
         </div>
       </div>
     </section>

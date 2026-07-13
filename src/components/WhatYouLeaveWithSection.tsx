@@ -28,12 +28,11 @@ export const WhatYouLeaveWithSection: React.FC = () => {
     <section id="leave-with" style={{ paddingTop: '40px', paddingBottom: '40px' }}>
       <div className="wrap">
         <span className="eyebrow rv">What you leave with</span>
-        <h2 className="rv d1" style={{ marginTop: '16px' }}>
-          You don't realise how much you've been carrying... <em>until you put it down.</em>
+        <h2 className="rv d1" style={{ marginTop: '16px', fontFamily: 'var(--display)', fontWeight: 300, fontSize: 'clamp(32px, 5vw, 58px)', color: 'var(--day)' }}>
+          What you leave with
         </h2>
-        <p className="lede rv d2" style={{ maxWidth: '64ch' }}>
+        <p className="lede rv d2">
           You don't realise how much you've been carrying until you put it down somewhere like this.
-          A few days here doesn't solve everything, but it gives you back the space to remember who you are.
         </p>
 
         <div className="who-grid" style={{ marginTop: '48px' }}>
