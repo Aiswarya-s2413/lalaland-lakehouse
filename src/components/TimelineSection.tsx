@@ -5,19 +5,19 @@ export const TimelineSection: React.FC = () => {
 
   const timelineItems = [
     {
-      time: 'Before Dawn',
-      title: 'The world wakes up without asking you',
+      time: 'Before dawn',
+      title: 'The world wakes up without asking you.',
       desc: 'Birdsong arrives before the light does. You can ignore it - the beds are deep, the blinds are thick — or you can be there for the moment the lake turns gold. Either is the right choice.',
     },
     {
       time: 'Morning',
       title: 'Tea on the aangan. No plan required.',
-      desc: 'Mrs. Lala\'s breakfast arrives - farm-fresh, unhurried, made with the kind of care that makes you eat more slowly. The jhoola is already occupied by someone who got there first.',
+      desc: "Mrs. Lala's breakfast arrives - farm-fresh, unhurried, made with the kind of care that makes you eat more slowly. The jhoola is already occupied by someone who got there first.",
     },
     {
       time: 'Mid-morning',
       title: 'Walk the land with Mr. Lala.',
-      desc: '35 acres, two kilometres of shoreline, and someone who has been watching this place change for nearly two decades. He knows where the kingfishers nest. He\'ll tell you the story of the submerged trees. You won\'t look at the lake the same way after.',
+      desc: "35 acres, two kilometres of shoreline, and someone who has been watching this place change for nearly two decades. He knows where the kingfishers nest. He'll tell you the story of the submerged trees. You won't look at the lake the same way after.",
     },
     {
       time: 'Afternoon',
@@ -32,7 +32,7 @@ export const TimelineSection: React.FC = () => {
     {
       time: 'Night',
       title: 'A sky you forgot was possible.',
-      desc: 'No streetlights. No city glow. The telescope comes out. Someone who has never cared about astronomy starts asking questions. You sleep in a way you\'d forgotten.',
+      desc: "No streetlights. No city glow. The telescope comes out. Someone who has never cared about astronomy starts asking questions. You sleep in a way you'd forgotten.",
     },
   ];
 
@@ -52,7 +52,7 @@ export const TimelineSection: React.FC = () => {
             >
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <span className="timeline-label" style={{ color: 'var(--sun)', fontFamily: 'var(--mono)', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em' }}>
+                <span className="timeline-label" style={{ color: 'var(--sun)', fontFamily: 'var(--mono)', fontSize: '11px', textTransform: 'lowercase', letterSpacing: '0.15em' }}>
                   {item.time}
                 </span>
                 <h3 className="timeline-title" style={{ fontSize: '20px', fontWeight: 300, marginTop: '6px' }}>{item.title}</h3>
