@@ -27,7 +27,6 @@ export const WhatYouLeaveWithSection: React.FC = () => {
   return (
     <section id="leave-with" style={{ paddingTop: '40px', paddingBottom: '40px' }}>
       <div className="wrap">
-        <span className="eyebrow rv">What you leave with</span>
         <h2 className="rv d1" style={{ marginTop: '16px', fontFamily: 'var(--display)', fontWeight: 300, fontSize: 'clamp(32px, 5vw, 58px)', color: 'var(--day)' }}>
           What you leave with
         </h2>

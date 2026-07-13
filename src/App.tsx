@@ -143,8 +143,6 @@ function App() {
             </a>
           </div>
         </div>
-        <span className="coords">18°55′ N · 73°14′ E · HETVANE BACKWATERS</span>
-        <div className="scroll-cue">One scroll · one day</div>
       </header>
 
       {/* Section 2: What Modern Life Takes */}

@@ -15,15 +15,15 @@ export const ArrivalSection: React.FC = () => {
   const faqs = [
     {
       question: 'Is the road bike-friendly?',
-      answer: 'Yes — the last stretch through reserve forest is a favourite with biking groups. Single-lane, scenic, and manageable for most riders.',
+      answer: 'Yes — the last stretch through reserve forest is a favourite with biking groups. Single-lane, scenic, manageable for most riders.',
     },
     {
       question: 'Do we need to bring food?',
-      answer: 'No — meals are included and mandatory given the remote location. Just confirm your dietary preferences in advance.',
+      answer: 'No — meals are included and mandatory given the remote location. Just confirm preferences in advance.',
     },
     {
       question: 'What\'s the best time to visit?',
-      answer: 'Post-monsoon through winter (October–February) offers the clearest skies and easiest road conditions. Monsoon has its own lush beauty, but the drive needs more care.',
+      answer: 'Post-monsoon through winter (October–February) for the clearest skies and easiest road conditions. Monsoon has its own beauty but the drive needs more care.',
     },
   ];
 
@@ -34,31 +34,26 @@ export const ArrivalSection: React.FC = () => {
   return (
     <section id="arrive">
       <div className="wrap">
-        <span className="eyebrow rv">Arrival</span>
-        <h2 className="rv d1" style={{ marginTop: '16px' }}>
-          Close enough for a weekend. <em>Far enough to disappear.</em>
+        <h2 className="rv d1" style={{ marginTop: '16px', fontFamily: 'var(--display)', fontWeight: 300, fontSize: 'clamp(32px, 5vw, 58px)', color: 'var(--day)' }}>
+          Section 5: Getting Here
         </h2>
-        <div className="arrive-grid">
+        <div className="arrive-grid" style={{ marginTop: '30px' }}>
           <div className="rv d2">
+            <p style={{ fontWeight: 500, color: 'var(--sun)', fontSize: '18px', marginBottom: '16px' }}>
+              Close enough for a weekend. Far enough to actually disappear.
+            </p>
             <p>
               We're 21 km off the Pen–Khopoli road in Raigad district. The last stretch winds through 
               reserve forest on a single-lane road. Take it slow — that's not a warning, it's the 
-              beginning of the rediscovery. Bikers especially: this road is yours.
+              beginning of the rediscovery. Bikers especially: this road is yours. Regular cars can access the property. 
+              The last 2 km is a rural road - comfortable in good weather. During monsoon, we recommend 
+              checking with us before you set out.
             </p>
-            <p>
-              Regular cars can easily access the property. The last 2 km is a rural dirt road, which is 
-              comfortable in good weather. During monsoon, we recommend checking with us before you set out.
+            <p style={{ marginTop: '16px', marginBottom: '24px' }}>
+              Arriving after 5pm? Just let us know. Caretaker on-site daily 8am–8pm. 
+              Exact address shared after booking. Free parking for cars, bikes, and caravans 
+              just outside the gate.
             </p>
-            <p style={{ marginBottom: '24px' }}>
-              Arriving after 5pm? Just let us know. Caretaker is on-site daily from 8am to 8pm. 
-              Exact address will be shared after booking. Free parking for cars, bikes, and caravans 
-              is available just outside the gate.
-            </p>
-            <div className="boat-note">
-              <strong>The better way to arrive:</strong> meet us at the village jetty and
-              come across by boat — a four-kilometre, twenty-minute glide that ends at the
-              shack. City behind you, water ahead.
-            </div>
           </div>
           <div className="dist rv d3" aria-label="Distances">
             {distances.map((dist, idx) => (
@@ -71,10 +66,7 @@ export const ArrivalSection: React.FC = () => {
         </div>
 
         {/* Accordion FAQ block */}
-        <div className="faq-accordion rv d2">
-          <h3 className="mono" style={{ fontSize: '13px', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--sun)', marginBottom: '16px' }}>
-            Frequently Asked Questions
-          </h3>
+        <div className="faq-accordion rv d2" style={{ marginTop: '48px' }}>
           {faqs.map((faq, index) => (
             <div key={index} className={`faq-item ${openFaq === index ? 'open' : ''}`}>
               <button className="faq-header" onClick={() => toggleFaq(index)}>

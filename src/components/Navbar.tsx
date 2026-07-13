@@ -64,13 +64,13 @@ export const Navbar: React.FC = () => {
         </button>
 
         <nav className={isMobileMenuOpen ? 'open' : ''}>
-          <a href="#why" onClick={closeMobileMenu}>Antidote</a>
-          <a href="#who" onClick={closeMobileMenu}>Who comes</a>
-          <a href="#stays" onClick={closeMobileMenu}>Stays</a>
-          <a href="#do" onClick={closeMobileMenu}>Do</a>
+          <a href="#why" onClick={closeMobileMenu}>What Modern Life Takes</a>
+          <a href="#who" onClick={closeMobileMenu}>Who Rediscovers Here</a>
+          <a href="#stays" onClick={closeMobileMenu}>Your Home Here</a>
+          <a href="#do" onClick={closeMobileMenu}>Experiences</a>
           <a href="#food" onClick={closeMobileMenu}>Food</a>
-          <a href="#land" onClick={closeMobileMenu}>The land</a>
-          <a href="#arrive" onClick={closeMobileMenu}>Arrival</a>
+          <a href="#land" onClick={closeMobileMenu}>The Place</a>
+          <a href="#arrive" onClick={closeMobileMenu}>Getting Here</a>
         </nav>
       </div>
     </div>

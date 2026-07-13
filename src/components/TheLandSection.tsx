@@ -19,7 +19,6 @@ export const TheLandSection: React.FC = () => {
         <div className="mist m2"></div>
       </div>
       <div className="wrap" style={{ position: 'relative', zIndex: 1 }}>
-        <span className="eyebrow rv">The place</span>
         <h2 className="rv d1" style={{ marginTop: '16px', fontFamily: 'var(--display)', fontWeight: 300, fontSize: 'clamp(32px, 5vw, 58px)', color: 'var(--day)' }}>
           Section 4: The Place
         </h2>

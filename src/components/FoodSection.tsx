@@ -13,7 +13,6 @@ export const FoodSection: React.FC = () => {
   return (
     <section id="food">
       <div className="narrow">
-        <span className="eyebrow rv">The food</span>
         <h2 className="rv d1" style={{ marginTop: '16px', fontFamily: 'var(--display)', fontWeight: 300, fontSize: 'clamp(32px, 5vw, 58px)', color: 'var(--day)' }}>
           Food at Lalaland
         </h2>

@@ -32,7 +32,6 @@ export const StaysSection: React.FC = () => {
   return (
     <section id="stays">
       <div className="wrap">
-        <span className="eyebrow rv">Stays</span>
         <h2 className="rv d1" style={{ marginTop: '16px', fontFamily: 'var(--display)', fontWeight: 300, fontSize: 'clamp(32px, 5vw, 58px)', color: 'var(--day)' }}>
           Your Home Here
         </h2>
