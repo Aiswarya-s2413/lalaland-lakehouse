@@ -4,13 +4,9 @@ import { Preloader } from './components/Preloader';
 import { SkyBackground } from './components/SkyBackground';
 import { Navbar } from './components/Navbar';
 import { WaterShimmer } from './components/WaterShimmer';
-import { WordCycler } from './components/WordCycler';
-import { StatsCounter } from './components/StatsCounter';
 import { WhyComeSection } from './components/WhyComeSection';
 import { WhoRediscoversSection } from './components/WhoRediscoversSection';
 import { DroneFilmSection } from './components/DroneFilmSection';
-import { OurStorySection } from './components/OurStorySection';
-import { TheWaterSection } from './components/TheWaterSection';
 import { StaysSection } from './components/StaysSection';
 import { TheLandSection } from './components/TheLandSection';
 import { ActivitiesSection } from './components/ActivitiesSection';
@@ -97,25 +93,48 @@ function App() {
           </svg>
         </div>
 
-        <div className="wrap hero-inner">
-          <span className="crest-pill rv in">The Modern Life Antidote</span>
+        <div className="wrap hero-inner" style={{ position: 'relative', zIndex: 3 }}>
+          <span className="crest-pill rv in">Modern life is stressful, lonely and predictable</span>
           <h1 style={{ maxWidth: '18ch' }}>
             <span className="ink">
-              <span>Modern life is stressful,</span>
+              <span>Come</span>
             </span>
             <span className="ink">
               <span>
-                <em>lonely &amp; predictable.</em>
+                <em>Re/Discover</em>
               </span>
             </span>
           </h1>
-          <h2 style={{ fontFamily: 'var(--display)', fontSize: '28px', fontWeight: 300, marginTop: '20px', color: 'var(--day)' }} className="rv in d1">
-            Come Re/Discover <WordCycler />
-          </h2>
-          <p className="hero-sub rv in d2">
-            Thirty-five acres of forest and shoreline on an undiscovered lake so pure a city drinks from it. 
-            A handful of rooms, hand-stitched canvas, silent boats — and the kind of quiet that can't be built, 
-            only found at Lalaland Lakehouse.
+          
+          <ul className="mono rv in d1" style={{ 
+            listStyle: 'none', 
+            marginTop: '24px', 
+            fontSize: '18px', 
+            display: 'flex', 
+            flexDirection: 'column', 
+            gap: '12px',
+            color: 'var(--sun)'
+          }}>
+            <li style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--sun)' }}></span>
+              Nature.
+            </li>
+            <li style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--sun)' }}></span>
+              Play.
+            </li>
+            <li style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--sun)' }}></span>
+              Connections.
+            </li>
+            <li style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--sun)' }}></span>
+              Yourself.
+            </li>
+          </ul>
+
+          <p className="hero-sub rv in d2" style={{ marginTop: '30px', fontWeight: 500 }}>
+            Do it at Lalaland Lakehouse. The Modern Life Antidote.
           </p>
           <div className="hero-cta rv in d3">
             <a className="btn btn-sun" href="#invite">
@@ -130,29 +149,6 @@ function App() {
         <div className="scroll-cue">One scroll · one day</div>
       </header>
 
-      {/* Manifesto Marquee line */}
-      <div className="manifesto rv">
-        <p>
-          no wifi by the water <b>·</b> no jet skis, ever <b>·</b> no menus, just what's cooking <b>·</b> limited rooms, on
-          purpose <b>·</b> no two sunsets alike
-        </p>
-      </div>
-      <div className="hr-glow"></div>
-
-      {/* Numbers Stats Strip */}
-      <section style={{ paddingTop: '90px', paddingBottom: '70px' }}>
-        <div className="wrap">
-          <span className="eyebrow rv">The estate, in numbers</span>
-          <div className="numbers">
-            <StatsCounter target={35} suffix="AC" label="Private acres" delayClass="d1" />
-            <StatsCounter target={2} suffix="KM" label="Own shoreline" delayClass="d2" />
-            <StatsCounter target={270} suffix="°" label="Of open water" delayClass="d3" />
-            <StatsCounter target={85} suffix="KM" label="From Colaba" delayClass="d4" />
-            <StatsCounter target={0} label="Jet skis, ever" delayClass="d4" />
-          </div>
-        </div>
-      </section>
-
       {/* Section 2: What Modern Life Takes */}
       <WhyComeSection />
 
@@ -161,12 +157,6 @@ function App() {
 
       {/* YouTube Drone Film Section */}
       <DroneFilmSection />
-
-      {/* Vinita & Dilip's Story (Letter) */}
-      <OurStorySection />
-
-      {/* Water Logbook section */}
-      <TheWaterSection />
 
       {/* Stays & Specifications Section */}
       <StaysSection />

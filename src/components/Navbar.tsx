@@ -66,7 +66,6 @@ export const Navbar: React.FC = () => {
         <nav className={isMobileMenuOpen ? 'open' : ''}>
           <a href="#why" onClick={closeMobileMenu}>Antidote</a>
           <a href="#who" onClick={closeMobileMenu}>Who comes</a>
-          <a href="#water" onClick={closeMobileMenu}>The water</a>
           <a href="#stays" onClick={closeMobileMenu}>Stays</a>
           <a href="#do" onClick={closeMobileMenu}>Do</a>
           <a href="#food" onClick={closeMobileMenu}>Food</a>
