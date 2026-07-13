@@ -35,7 +35,7 @@ export const ArrivalSection: React.FC = () => {
     <section id="arrive">
       <div className="wrap">
         <h2 className="rv d1" style={{ marginTop: '16px', fontFamily: 'var(--display)', fontWeight: 300, fontSize: 'clamp(32px, 5vw, 58px)', color: 'var(--day)' }}>
-          Section 5: Getting Here
+          Getting Here
         </h2>
         <div className="arrive-grid" style={{ marginTop: '30px' }}>
           <div className="rv d2">

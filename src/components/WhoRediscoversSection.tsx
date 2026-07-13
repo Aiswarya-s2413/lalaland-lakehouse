@@ -44,7 +44,7 @@ export const WhoRediscoversSection: React.FC = () => {
     <section id="who" style={{ paddingTop: '40px' }}>
       <div className="wrap">
         <h2 className="rv d1" style={{ marginTop: '16px', fontFamily: 'var(--display)', fontWeight: 300, fontSize: 'clamp(32px, 5vw, 58px)', color: 'var(--day)' }}>
-          Section 3: Who Rediscovers here
+          Who Rediscovers here
         </h2>
         <p className="lede rv d2">
           All kinds of people. What they share is the quiet sense that something has gone missing and

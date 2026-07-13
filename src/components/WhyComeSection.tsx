@@ -24,7 +24,7 @@ export const WhyComeSection: React.FC = () => {
     <section id="why" style={{ paddingTop: '30px', paddingBottom: '40px' }}>
       <div className="narrow">
         <h2 className="rv d1" style={{ marginTop: '16px', fontFamily: 'var(--display)', fontWeight: 300, fontSize: 'clamp(32px, 5vw, 58px)', color: 'var(--day)' }}>
-          Section 2: What Modern Life Takes
+          What Modern Life Takes
         </h2>
         <div className="prose rv d2" style={{ marginTop: '26px', maxWidth: 'none' }}>
           <p>

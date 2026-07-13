@@ -20,7 +20,7 @@ export const TheLandSection: React.FC = () => {
       </div>
       <div className="wrap" style={{ position: 'relative', zIndex: 1 }}>
         <h2 className="rv d1" style={{ marginTop: '16px', fontFamily: 'var(--display)', fontWeight: 300, fontSize: 'clamp(32px, 5vw, 58px)', color: 'var(--day)' }}>
-          Section 4: The Place
+          The Place
         </h2>
         <p className="lede rv d2" style={{ fontWeight: 500, color: 'var(--sun)' }}>
           A hilltop above a private lake, in the middle of nowhere you'd expect.
