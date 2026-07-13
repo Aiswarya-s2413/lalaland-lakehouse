@@ -15,6 +15,7 @@ import { StaysSection } from './components/StaysSection';
 import { TheLandSection } from './components/TheLandSection';
 import { ActivitiesSection } from './components/ActivitiesSection';
 import { FoodSection } from './components/FoodSection';
+import { WhatYouLeaveWithSection } from './components/WhatYouLeaveWithSection';
 import { TimelineSection } from './components/TimelineSection';
 import { ArrivalSection } from './components/ArrivalSection';
 import { InvitationSection } from './components/InvitationSection';
@@ -178,6 +179,9 @@ function App() {
 
       {/* Vinita's Kitchen Food Section */}
       <FoodSection />
+
+      {/* What You Leave With Section */}
+      <WhatYouLeaveWithSection />
 
       {/* Interactive Timeline: A Day Here, Roughly */}
       <TimelineSection />
