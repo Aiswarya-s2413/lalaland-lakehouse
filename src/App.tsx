@@ -14,6 +14,8 @@ import { FoodSection } from './components/FoodSection';
 import { WhatYouLeaveWithSection } from './components/WhatYouLeaveWithSection';
 import { TimelineSection } from './components/TimelineSection';
 import { ArrivalSection } from './components/ArrivalSection';
+import { WhatsAppButton } from './components/WhatsAppButton';
+
 
 // Ambient looping drone footage behind the hero text
 const VideoBackground: React.FC = () => {
@@ -174,6 +176,9 @@ function App() {
 
       {/* Section 5: Getting Here (Distances & FAQ accordion) */}
       <ArrivalSection />
+
+      {/* Floating WhatsApp Action Button */}
+      <WhatsAppButton />
     </>
   );
 }
